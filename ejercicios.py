@@ -2,8 +2,9 @@
 #Solicitar al usuario las horas trabajadas, teniendo en cuenta que la jornada es de 42 horas y valor hora es de 33000. Calcular el salario del trabajador teniendo en cuenta si este excede la jornada y trabaja horas extras o si por el contrario no excede la jornada de trabajo.
 
 horas_trabajadas = float(input("Ingresa las horas trababajas: "))
-valor_hora = 33000
 jornada = 42
+valor_hora = 33000
+
 
 salario_normal = min(horas_trabajadas, jornada) * valor_hora #Calculo del salario normal del trabajador
 
@@ -46,7 +47,7 @@ if len(nombre_uno) == len(nombre_dos):
     else:
         print(f"Los nombre {nombre_uno} y {nombre_dos} tienen la misma longitud pero no comienza con la misma letra {nombre_uno[0]}")
 else:
-    print(f"Los nombre {nombre_uno} y {nombre_dos} no tienen la misma longitud")
+    print(f"Los nombre {nombre_uno} y {nombre_dos} no coinciden")
          
 #Ejercicio 4
 #Adivina el número: Escribe un programa que genere un número aleatorio entre 1 y 100(importar librería random), y que le pida al usuario adivinarlo. El programa debe indicar si el número ingresado por el usuario es mayor, menor o igual al número generado. El usuario debe tener 3 intentos para adivinar el número. Ejem: aleatorio = random.randint(1,100)
@@ -102,12 +103,12 @@ for i in range (cantidad_departamentos):
     departamento = input(f"Ingrese el nombre del departamento {i + 1} de Colombia: ")
     departamentos_colombia.append(departamento)
 
+print("\nLos 2 ultimos departamentos ingresados son: ", departamentos_colombia[-2:])
+for departamento in departamentos_colombia[-2:]:
+    print(departamento)
+
 departamentos_colombia.sort(reverse=True)
 
 print("\nLista de departamentos de Colombia en orden descendente: ") 
 for departamento in departamentos_colombia:
-    print(departamento)
-
-print("\nLos 2 ultimos departamentos ingresados son: ", departamentos_colombia[:2])
-for departamento in departamentos_colombia[:2]:
     print(departamento)
