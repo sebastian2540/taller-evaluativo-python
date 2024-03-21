@@ -19,6 +19,7 @@ print(f"El salario del trabajador es: {salario_total}")
 
 #Ejercicio 2
 #Solicitar al usuario un número y validar si este es número primo. (usar ciclos si es necesario)
+
 numero = int(input("Ingresar un numero: "))
 
 if numero <= 1:
